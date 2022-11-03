@@ -41,7 +41,12 @@ public class TestGeneral {
 	
 	@Test
 	public void queSePuedaMonitorearUnaExtraccion() {
-		TransaccionMonetaria extraccion = new Extraccion();
+		String cuit = "00-33.333.333-00";
+		String nombre = "Jaimito";
+		Double monto = 300.0;
+		Cliente cliente = new Cliente(cuit, nombre);
+		Integer id = 1;
+		TransaccionMonetaria extraccion = new Extraccion(id, cliente,monto);
 		
 	}
 
